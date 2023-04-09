@@ -28,7 +28,7 @@ public class ChurnPoints : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-        if (other.name == "Bottom Box Collider")
+        if (other.name == "Bottom Box Collider" && churnPoints % 2 == 1)
         {
             AudioSource.PlayClipAtPoint(audioClip1, transform.position);
             churnPoints += 1;
@@ -36,7 +36,7 @@ public class ChurnPoints : MonoBehaviour
             churnPointsText.text = churnPoints.ToString();
         }
 
-        if (other.name == "Top Box Collider")
+        if (other.name == "Top Box Collider" && churnPoints % 2 == 0)
         {
             AudioSource.PlayClipAtPoint(audioClip2, transform.position);
             churnPoints += 1;
