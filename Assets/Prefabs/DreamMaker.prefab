@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2208746148849638252}
   - component: {fileID: 6775335080281692751}
   m_Layer: 6
-  m_Name: P_PROP_butterchurn_interior
+  m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: 8204819146561696063}
   - component: {fileID: 646791123116854738}
   m_Layer: 0
-  m_Name: SM_PROP_butterchurn_lid_interior
+  m_Name: Lid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -212,7 +212,7 @@ GameObject:
   - component: {fileID: 7314660886991796911}
   - component: {fileID: 7314660886991796896}
   m_Layer: 0
-  m_Name: SM_PROP_butterchurn_plunger_interior
+  m_Name: Yearn Stick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -627,8 +627,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.3, y: 0.44, z: 0.34}
-  m_Center: {x: 0, y: 0.66, z: 0}
+  m_Size: {x: 0.23836792, y: 0.36028945, z: 0.20702195}
+  m_Center: {x: 0.0031378865, y: 0.5146472, z: -0.0032469034}
 --- !u!1 &7314660885711207939
 GameObject:
   m_ObjectHideFlags: 0
@@ -640,7 +640,7 @@ GameObject:
   - component: {fileID: 7314660885711207940}
   - component: {fileID: 7314660885711207942}
   - component: {fileID: 7314660885711207960}
-  - component: {fileID: 1581415870954097379}
+  - component: {fileID: 1795503477}
   m_Layer: 0
   m_Name: Churn Point
   m_TagString: Untagged
@@ -656,7 +656,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7314660885711207939}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.864, z: 0}
+  m_LocalPosition: {x: 0, y: -0.88, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -692,7 +692,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1581415870954097379
+--- !u!114 &1795503477
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -701,10 +701,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 7314660885711207939}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12023929730c31148bdc4f674b46cebe, type: 3}
+  m_Script: {fileID: 11500000, guid: 213ea01cd5a416e409f19e6819953cd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  yearnPoints: 0
+  audioClip1: {fileID: 8300000, guid: 3acc621982c83ee4ab38848b7231185d, type: 3}
+  audioClip2: {fileID: 8300000, guid: a0c9c9f0e444a4b419792464b6aaf08d, type: 3}
+  churnPoints: 0
+  churnPointsText: {fileID: 0}
 --- !u!1 &7314660886228240643
 GameObject:
   m_ObjectHideFlags: 0
@@ -748,8 +751,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.3, y: 0.39, z: 0.3}
-  m_Center: {x: 0, y: -0.03, z: 0}
+  m_Size: {x: 0.3, y: 0.18803224, z: 0.33889285}
+  m_Center: {x: 0, y: 0.07098387, z: -0.019446418}
 --- !u!1 &7314660886448166292
 GameObject:
   m_ObjectHideFlags: 0
